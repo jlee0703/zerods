@@ -1,0 +1,310 @@
+/* Common */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #212121;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+h1 {
+  height: 100%;
+  font-family: "Orbitron", sans-serif;
+  font-size: 5vw;
+  color: #a22921;
+  position: relative;
+  margin: 0 auto;
+}
+h1:before {
+  content: "Zero Dimensional Space";
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 #f1d200;
+  top: 0px;
+  color: #a22921;
+  background: #212121;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(27px, 9999px, 59px, 0);
+  }
+  5% {
+    clip: rect(90px, 9999px, 86px, 0);
+  }
+  10% {
+    clip: rect(22px, 9999px, 84px, 0);
+  }
+  15% {
+    clip: rect(15px, 9999px, 24px, 0);
+  }
+  20% {
+    clip: rect(85px, 9999px, 15px, 0);
+  }
+  25% {
+    clip: rect(15px, 9999px, 82px, 0);
+  }
+  30% {
+    clip: rect(85px, 9999px, 79px, 0);
+  }
+  35% {
+    clip: rect(74px, 9999px, 100px, 0);
+  }
+  40% {
+    clip: rect(86px, 9999px, 11px, 0);
+  }
+  45% {
+    clip: rect(98px, 9999px, 55px, 0);
+  }
+  50% {
+    clip: rect(87px, 9999px, 8px, 0);
+  }
+  55% {
+    clip: rect(1px, 9999px, 90px, 0);
+  }
+  60% {
+    clip: rect(69px, 9999px, 35px, 0);
+  }
+  65% {
+    clip: rect(18px, 9999px, 64px, 0);
+  }
+  70% {
+    clip: rect(3px, 9999px, 34px, 0);
+  }
+  75% {
+    clip: rect(99px, 9999px, 33px, 0);
+  }
+  80% {
+    clip: rect(83px, 9999px, 48px, 0);
+  }
+  85% {
+    clip: rect(33px, 9999px, 57px, 0);
+  }
+  90% {
+    clip: rect(29px, 9999px, 39px, 0);
+  }
+  95% {
+    clip: rect(21px, 9999px, 98px, 0);
+  }
+  100% {
+    clip: rect(53px, 9999px, 78px, 0);
+  }
+}
+h1:after {
+  content: "Zero Dimensional Space";
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0px;
+  color: #a22921;
+  background: #212121;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 5s infinite linear alternate-reverse;
+}
+@keyframes noise-anim {
+  0% {
+    clip: rect(27px, 9999px, 59px, 0);
+  }
+  5% {
+    clip: rect(90px, 9999px, 86px, 0);
+  }
+  10% {
+    clip: rect(22px, 9999px, 84px, 0);
+  }
+  15% {
+    clip: rect(15px, 9999px, 24px, 0);
+  }
+  20% {
+    clip: rect(85px, 9999px, 15px, 0);
+  }
+  25% {
+    clip: rect(15px, 9999px, 82px, 0);
+  }
+  30% {
+    clip: rect(85px, 9999px, 79px, 0);
+  }
+  35% {
+    clip: rect(74px, 9999px, 100px, 0);
+  }
+  40% {
+    clip: rect(86px, 9999px, 11px, 0);
+  }
+  45% {
+    clip: rect(98px, 9999px, 55px, 0);
+  }
+  50% {
+    clip: rect(87px, 9999px, 8px, 0);
+  }
+  55% {
+    clip: rect(1px, 9999px, 90px, 0);
+  }
+  60% {
+    clip: rect(69px, 9999px, 35px, 0);
+  }
+  65% {
+    clip: rect(18px, 9999px, 64px, 0);
+  }
+  70% {
+    clip: rect(3px, 9999px, 34px, 0);
+  }
+  75% {
+    clip: rect(99px, 9999px, 33px, 0);
+  }
+  80% {
+    clip: rect(83px, 9999px, 48px, 0);
+  }
+  85% {
+    clip: rect(33px, 9999px, 57px, 0);
+  }
+  90% {
+    clip: rect(29px, 9999px, 39px, 0);
+  }
+  95% {
+    clip: rect(21px, 9999px, 98px, 0);
+  }
+  100% {
+    clip: rect(53px, 9999px, 78px, 0);
+  }
+}
+
+/* Gate */
+.gate {
+  height: 80vh;
+}
+.gate a {
+  font-size: 0;
+  display: block;
+  width: 25vw;
+  min-width: 600px;
+  margin-top: 8vh;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.blackHole img {
+  width: 100%;
+  animation-name: blackHole;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/* .gate.on .blackHole img {
+  animation-name: clickedBlackHole;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+} */
+.colorHole img {
+  width: 100%;
+  animation-name: colorHole;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes blackHole {
+  25% {
+    transform: scale(0.9, 0.9);
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    transform: scale(1.1, 1.1);
+  }
+}
+@keyframes colorHole {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes clickedCircle {
+  25% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(5, 5);
+  }
+}
+@keyframes clickedBlackHole {
+  100% {
+    opacity: 0;
+    transform: scale(3, 3);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .gate a {
+    font-size: 0;
+    display: block;
+    width: 45%;
+    min-width: 400px;
+    margin-top: 0vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 767px) {
+  header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+  }
+  .gate {
+    height: 80%;
+  }
+  .gate a {
+    font-size: 0;
+    display: block;
+    width: 25vw;
+    min-width: 100px;
+    height: 80%;
+    margin-top: 5%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 414px) {
+  h1 {
+    width: 50%;
+    height: 100%;
+    font-family: "Orbitron", sans-serif;
+    font-size: 10vw;
+    color: #a22921;
+    position: relative;
+    margin: 0 auto;
+  }
+  .gate a {
+    font-size: 0;
+    display: block;
+    width: 80%;
+    min-width: 300px;
+    height: 80%;
+    margin-top: 10%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

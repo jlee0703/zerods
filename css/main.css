@@ -1,0 +1,1785 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-image: url("../images/bg_space03.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 110vh;
+  overflow: hidden;
+}
+
+/* Solar System */
+.solarSystem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  margin-top: 150px;
+  position: relative;
+}
+.planet {
+  width: 1918px;
+  height: 707px;
+  position: absolute;
+  margin: 300px 0 0 40%;
+  transform: rotate(20deg);
+}
+.planet > li {
+  border: 1px dotted var(--grey-light-color);
+  border-radius: 50%;
+  position: absolute;
+}
+.planet img {
+  position: absolute;
+  transform: rotate(-20deg);
+}
+
+.planet .center {
+  border: none;
+  width: 20%;
+  height: 5%;
+  top: 45%;
+  left: 40%;
+}
+.blackHole {
+  width: 650px;
+  top: -1200%;
+  left: -80%;
+  z-index: 18;
+  animation-name: blackHole;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes blackHole {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.jupiterOrbit {
+  border-bottom-style: none;
+  width: 40%;
+  height: 22%;
+  top: 23%;
+  left: 20%;
+}
+.planet .jupiterFront {
+  border-top-style: none;
+  width: 40%;
+  height: 22%;
+  top: 23%;
+  left: 20%;
+  z-index: 19;
+}
+.jupiter {
+  width: 80px;
+  top: 50%;
+  left: 10%;
+  z-index: 20;
+  animation-name: jupiter;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes jupiter {
+  0% {
+    top: 50%;
+    left: 10%;
+    z-index: 20;
+  }
+  10% {
+    top: 70%;
+    left: 25%;
+  }
+  20% {
+    top: 75%;
+    left: 40%;
+  }
+  30% {
+    top: 75%;
+    left: 55%;
+  }
+  40% {
+    top: 68%;
+    left: 70%;
+  }
+  50% {
+    top: 60%;
+    left: 85%;
+  }
+  55% {
+    top: 15%;
+    left: 100%;
+    z-index: 20;
+  }
+  60% {
+    top: 5;
+    left: 90%;
+    z-index: 16;
+  }
+  70% {
+    top: -25%;
+    left: 59%;
+  }
+  80% {
+    top: -25%;
+    left: 28%;
+    z-index: 16;
+  }
+  90% {
+    top: 15%;
+    left: -3%;
+    z-index: 20;
+  }
+  100% {
+    top: 50%;
+    left: 10%;
+  }
+}
+
+.moonOrbit {
+  border-bottom-style: none;
+  width: 60%;
+  height: 40%;
+  top: 15%;
+  left: 12%;
+}
+.planet .moonFront {
+  border-top-style: none;
+  width: 60%;
+  height: 40%;
+  top: 15%;
+  left: 12%;
+  z-index: 19;
+}
+.moon {
+  width: 80px;
+  top: 30%;
+  left: -3%;
+  z-index: 22;
+  animation-name: moon;
+  animation-duration: 150s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+}
+
+@keyframes moon {
+  0% {
+    top: 30%;
+    left: -3%;
+    z-index: 22;
+  }
+  5% {
+    top: 0%;
+    left: 9%;
+    z-index: 14;
+  }
+  10% {
+    top: -10%;
+    left: 21%;
+  }
+  15% {
+    top: -15%;
+    left: 34%;
+  }
+  20% {
+    top: -15%;
+    left: 46%;
+  }
+  25% {
+    top: -15%;
+    left: 58%;
+  }
+  30% {
+    top: -10%;
+    left: 70%;
+    z-index: 14;
+  }
+  35% {
+    top: -10%;
+    left: 80%;
+  }
+  40% {
+    top: 30%;
+    z-index: 22;
+  }
+  45% {
+    top: 20%;
+  }
+  50% {
+    top: -5%;
+    left: 95%;
+  }
+  55% {
+    top: 80%;
+    left: 85%;
+  }
+  60% {
+    top: 80%;
+    left: 66%;
+  }
+  65% {
+    top: 85%;
+    left: 56%;
+  }
+  70% {
+    top: 85%;
+    left: 47%;
+  }
+  75% {
+    top: 85%;
+    left: 38%;
+  }
+  80% {
+    top: 80%;
+    left: 29%;
+  }
+  85% {
+    top: 70%;
+    left: 20%;
+  }
+  90% {
+    top: 69%;
+    left: 10%;
+  }
+  95% {
+    top: 50%;
+    left: 1%;
+  }
+  100% {
+    top: 30%;
+    left: -3%;
+    z-index: 22;
+  }
+}
+
+.saturnOrbit {
+  border-bottom-style: none;
+  width: 80%;
+  height: 60%;
+  top: 7%;
+  left: 5%;
+}
+.planet .saturnFront {
+  border-top-style: none;
+  width: 80%;
+  height: 60%;
+  top: 7%;
+  left: 5%;
+  z-index: 19;
+}
+.saturn {
+  width: 160px;
+  top: -5%;
+  left: 25%;
+  animation-name: saturn;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes saturn {
+  0% {
+    top: -5%;
+    left: 25%;
+    z-index: 12;
+  }
+  10% {
+    top: 0%;
+    left: 15%;
+  }
+  20% {
+    top: 10%;
+    left: 5%;
+    z-index: 12;
+  }
+  21% {
+    top: 12%;
+    z-index: 24;
+  }
+  22% {
+    top: 15%;
+  }
+  23% {
+    top: 18%;
+  }
+  24% {
+    top: 25%;
+  }
+  25% {
+    top: 40%;
+    left: -5%;
+  }
+  26% {
+    top: 61%;
+  }
+  27% {
+    top: 70%;
+  }
+  28% {
+    top: 75%;
+  }
+  29% {
+    top: 79%;
+  }
+  30% {
+    top: 82%;
+    left: 15%;
+  }
+  40% {
+    top: 92%;
+    left: 35%;
+  }
+  50% {
+    top: 90%;
+    left: 55%;
+  }
+  55% {
+    top: 92%;
+    left: 60%;
+    z-index: 24;
+  }
+  60% {
+    top: 94%;
+    z-index: 12;
+  }
+  65% {
+    top: 88%;
+  }
+  70% {
+    top: 88%;
+    left: 100%;
+  }
+  75% {
+    top: 88%;
+  }
+  80% {
+    top: -10%;
+    left: 60%;
+  }
+  90% {
+    top: -9%;
+    left: 43%;
+  }
+  100% {
+    top: -5%;
+    left: 25%;
+  }
+}
+
+.marsOrbit {
+  border-bottom-style: none;
+  width: 100%;
+  height: 81%;
+  top: -1%;
+  left: 0%;
+}
+.marsGroup {
+  width: 20%;
+  height: 30%;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  animation-name: mars;
+  animation-duration: 250s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes mars {
+  0% {
+    top: 0%;
+    left: 0%;
+    z-index: 26;
+  }
+  5% {
+    top: 10%;
+    left: -5%;
+  }
+  10% {
+    top: 45%;
+    left: 2%;
+  }
+  15% {
+    top: 55%;
+  }
+  20% {
+    top: 65%;
+  }
+  25% {
+    top: 68%;
+  }
+  30% {
+    top: 70%;
+    left: 30%;
+  }
+  35% {
+    top: 80%;
+    z-index: 26;
+  }
+  40% {
+    top: 75%;
+  }
+  45% {
+    top: 65%;
+  }
+  50% {
+    top: 30%;
+    left: 92%;
+    z-index: 10;
+  }
+  55% {
+    top: 5%;
+    z-index: 6;
+  }
+  60% {
+    top: -5%;
+  }
+  65% {
+    top: -10%;
+  }
+  70% {
+    top: -28%;
+    left: 50%;
+  }
+  75% {
+    top: -29%;
+  }
+  80% {
+    top: -30%;
+    left: 45%;
+  }
+  85% {
+    top: -30%;
+  }
+  90% {
+    top: -25%;
+  }
+  95% {
+    top: -20%;
+    z-index: 6;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+  }
+}
+.mars {
+  width: 200px;
+  top: 25%;
+  left: -7%;
+  z-index: 26;
+}
+.marsGroup:before {
+  content: "";
+  width: 72%;
+  height: 15%;
+  border: 1px dotted var(--grey-light-color);
+  border-top-style: none;
+  border-radius: 50%;
+  transform: rotate(-20deg);
+  position: absolute;
+  top: 70%;
+  left: -18%;
+  z-index: 27;
+}
+.marsGroup:after {
+  content: "";
+  width: 72%;
+  height: 15%;
+  border: 1px dotted var(--grey-light-color);
+  border-bottom-style: none;
+  border-radius: 50%;
+  transform: rotate(-20deg);
+  position: absolute;
+  top: 70%;
+  left: -18%;
+  z-index: 23;
+}
+.satlitte {
+  width: 40px;
+  top: 83%;
+  left: -0%;
+  z-index: 30;
+  animation-name: satlitte;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes satlitte {
+  0% {
+    top: 83%;
+    left: 0%;
+    z-index: 30;
+  }
+  10% {
+    top: 74%;
+  }
+  20% {
+    top: 66%;
+  }
+  30% {
+    top: 56%;
+  }
+  35% {
+    top: 33%;
+    left: 45%;
+    z-index: 30;
+  }
+  40% {
+    top: 40%;
+    left: 34%;
+    z-index: 24;
+  }
+  50% {
+    top: 48%;
+    left: 25%;
+  }
+  60% {
+    top: 60;
+  }
+  70% {
+    top: 70%;
+  }
+  80% {
+    top: 78%;
+  }
+  85% {
+    top: 90%;
+    left: -22%;
+    z-index: 24;
+  }
+  90% {
+    top: 90%;
+    left: -11%;
+    z-index: 30;
+  }
+  100% {
+    top: 83%;
+    left: 0%;
+  }
+}
+.welcomeTextBox {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  left: 7%;
+  white-space: nowrap;
+}
+.welcomeText {
+  font-size: 40px;
+  font-family: "Orbitron", sans-serif;
+  color: var(--grey-light-color);
+  margin: 0 auto;
+  overflow: hidden;
+  border-right: 0.1em solid var(--red-color);
+  animation: typing 4s steps(40, end), blick-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blick-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--red-color);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .welcomeTextBox {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .solarSystem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 0px;
+    position: relative;
+  }
+  .planet {
+    width: 100%;
+    margin: 100px 0 0 25%;
+    transition: all 1s linear;
+    transform: rotate(0deg);
+  }
+  .planet img {
+    transform: rotate(0deg);
+  }
+  .planet .center {
+    border: none;
+    width: 18%;
+    height: 5%;
+    top: 45%;
+    left: 33%;
+  }
+  .blackHole {
+    width: 150px;
+    top: -350%;
+    left: -62%;
+    z-index: 18;
+    animation-name: blackHole;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes blackHole {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .jupiterOrbit {
+    border-bottom-style: none;
+    width: 20%;
+    height: 30%;
+    top: 23%;
+    left: 20%;
+    transition: all 1s linear;
+  }
+  .planet .jupiterFront {
+    border-top-style: none;
+    width: 20%;
+    height: 30%;
+    top: 23%;
+    left: 20%;
+    transition: all 1s linear;
+  }
+  .jupiter {
+    width: 50px;
+    top: 42%;
+    left: -12%;
+    z-index: 20;
+    animation-name: jupiter2d;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes jupiter2d {
+    0% {
+      top: 50%;
+      left: -10%;
+    }
+    5% {
+      top: 75%;
+      left: 4%;
+    }
+    10% {
+      top: 85%;
+      left: 18%;
+    }
+    15% {
+      top: 88%;
+      left: 32%;
+    }
+    20% {
+      top: 85%;
+      left: 46%;
+    }
+    25% {
+      top: 80%;
+      left: 60%;
+    }
+    30% {
+      top: 66%;
+      left: 76%;
+    }
+    35% {
+      top: 52%;
+      left: 84%;
+    }
+    40% {
+      top: 38%;
+      left: 86%;
+    }
+    45% {
+      top: 24%;
+      left: 85%;
+    }
+    50% {
+      top: 10%;
+      left: 80%;
+    }
+    55% {
+      top: -5%;
+      left: 63%;
+    }
+    60% {
+      top: -10;
+      left: 46%;
+    }
+    65% {
+      top: -11%;
+      left: 29%;
+    }
+    70% {
+      top: -5%;
+      left: 12%;
+    }
+    75% {
+      top: 10%;
+      left: -5%;
+    }
+    80% {
+      top: 18%;
+      left: -8%;
+    }
+    85% {
+      top: 26%;
+      left: -10%;
+    }
+    90% {
+      top: 34%;
+      left: -12%;
+    }
+    95% {
+      top: 42%;
+      left: -12%;
+    }
+    100% {
+      top: 50%;
+      left: -10%;
+    }
+  }
+
+  .moonOrbit {
+    border-bottom-style: none;
+    width: 30%;
+    height: 45%;
+    top: 15%;
+    left: 15%;
+    transition: all 1s linear;
+  }
+  .planet .moonFront {
+    border-top-style: none;
+    width: 30%;
+    height: 45%;
+    top: 15%;
+    left: 15%;
+    transition: all 1s linear;
+  }
+  .moon {
+    width: 50px;
+    top: 40%;
+    left: -8%;
+    z-index: 22;
+    animation-name: moon2d;
+    animation-duration: 210s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+  }
+
+  @keyframes moon2d {
+    0% {
+      top: 30%;
+      left: -7%;
+    }
+    5% {
+      top: 0%;
+      left: 13%;
+    }
+    10% {
+      top: -8%;
+      left: 31%;
+    }
+    15% {
+      top: -9%;
+      left: 49%;
+    }
+    20% {
+      top: -2%;
+      left: 67%;
+    }
+    25% {
+      top: 10%;
+      left: 85%;
+    }
+    30% {
+      top: 24%;
+      left: 88%;
+    }
+    35% {
+      top: 38%;
+      left: 90%;
+    }
+    40% {
+      top: 52%;
+      left: 88%;
+    }
+    45% {
+      top: 66%;
+      left: 84%;
+    }
+    50% {
+      top: 80%;
+      left: 73%;
+    }
+    55% {
+      top: 87%;
+      left: 57%;
+    }
+    60% {
+      top: 90%;
+      left: 45%;
+    }
+    65% {
+      top: 89%;
+      left: 33%;
+    }
+    70% {
+      top: 87%;
+      left: 21%;
+    }
+    75% {
+      top: 80%;
+      left: 10%;
+    }
+    80% {
+      top: 70%;
+      left: 0%;
+    }
+    85% {
+      top: 60%;
+      left: -5%;
+    }
+    90% {
+      top: 50%;
+      left: -8%;
+    }
+    95% {
+      top: 40%;
+      left: -8%;
+    }
+    100% {
+      top: 30%;
+      left: -7%;
+      z-index: 22;
+    }
+  }
+
+  .saturnOrbit {
+    border-bottom-style: none;
+    width: 45%;
+    height: 65%;
+    top: 5%;
+    left: 7%;
+    transition: all 1s linear;
+  }
+  .planet .saturnFront {
+    border-top-style: none;
+    width: 45%;
+    height: 65%;
+    top: 5%;
+    left: 7%;
+    transition: all 1s linear;
+  }
+  .saturn {
+    width: 130px;
+    top: -5%;
+    left: 25%;
+    z-index: 24;
+    animation-name: saturn2d;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes saturn2d {
+    0% {
+      top: -5%;
+      left: 25%;
+    }
+    5% {
+      top: 10%;
+      left: 0%;
+    }
+    10% {
+      top: 25%;
+      left: -10%;
+    }
+    15% {
+      top: 40%;
+      left: -14%;
+    }
+    20% {
+      top: 55%;
+      left: -13%;
+    }
+    25% {
+      top: 70%;
+      left: -8%;
+    }
+    30% {
+      top: 74%;
+      left: -5%;
+    }
+    35% {
+      top: 78%;
+      left: -2%;
+    }
+    40% {
+      top: 82%;
+      left: 2%;
+    }
+    45% {
+      top: 86%;
+      left: 8%;
+    }
+    46% {
+      top: 89%;
+      left: 18%;
+    }
+    47% {
+      top: 91%;
+      left: 27%;
+    }
+    48% {
+      top: 91%;
+      left: 37%;
+    }
+    49% {
+      top: 90%;
+      left: 46%;
+    }
+    50% {
+      top: 90%;
+      left: 55%;
+    }
+    55% {
+      top: 74%;
+      left: 73%;
+    }
+    60% {
+      top: 58%;
+      left: 83%;
+    }
+    65% {
+      top: 42%;
+      left: 85%;
+    }
+    70% {
+      top: 26%;
+      left: 82%;
+    }
+    75% {
+      top: 10%;
+      left: 73%;
+    }
+    80% {
+      top: 3%;
+      left: 65%;
+    }
+    85% {
+      top: -4%;
+      left: 55%;
+    }
+    90% {
+      top: -8%;
+      left: 45%;
+    }
+    95% {
+      top: -8%;
+      left: 35%;
+    }
+    100% {
+      top: -5%;
+      left: 25%;
+    }
+  }
+
+  .marsOrbit {
+    border-bottom-style: none;
+    width: 60%;
+    height: 85%;
+    top: -5%;
+    left: -1%;
+    transition: all 1s linear;
+  }
+  .marsGroup {
+    width: 20%;
+    height: 30%;
+    position: relative;
+    top: 0%;
+    left: 3%;
+    animation-name: mars2d;
+    animation-duration: 240s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes mars2d {
+    0% {
+      top: 0%;
+      left: 3%;
+      z-index: 30;
+    }
+    17% {
+      top: 32%;
+      left: -10%;
+    }
+    22% {
+      top: 50%;
+      left: -6%;
+    }
+    25% {
+      top: 65%;
+      left: 3%;
+    }
+    27% {
+      top: 73%;
+      left: 10%;
+    }
+    30% {
+      top: 80%;
+      left: 28%;
+    }
+    37% {
+      top: 80%;
+      left: 56%;
+    }
+    50% {
+      top: 60%;
+      left: 83%;
+    }
+    60% {
+      top: 53%;
+      left: 85%;
+    }
+    62% {
+      top: 50%;
+      left: 87%;
+    }
+    63% {
+      top: 48%;
+      left: 88%;
+    }
+    65% {
+      top: 30%;
+      left: 90%;
+    }
+    70% {
+      top: 12%;
+      left: 87%;
+    }
+    75% {
+      top: 3%;
+      left: 83%;
+    }
+    77% {
+      top: -5%;
+      left: 80%;
+    }
+    80% {
+      top: -5%;
+      left: 75%;
+    }
+    83% {
+      top: -10%;
+      left: 65%;
+    }
+    90% {
+      top: -17%;
+      left: 45%;
+    }
+    94% {
+      left: 35%;
+    }
+    96% {
+      top: -15%;
+      left: 25%;
+    }
+    98% {
+      top: -8%;
+      left: 12%;
+    }
+    100% {
+      top: 0%;
+      left: 3%;
+    }
+  }
+  .mars {
+    width: 120px;
+    top: 25%;
+    left: -7%;
+    z-index: 26;
+  }
+  .marsGroup:before {
+    content: "";
+    width: 120%;
+    height: 75%;
+    border: 1px dotted var(--grey-light-color);
+    border-top-style: none;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 18%;
+    left: -18%;
+    z-index: 27;
+  }
+  .marsGroup:after {
+    content: "";
+    width: 120%;
+    height: 75%;
+    border: 1px dotted var(--grey-light-color);
+    border-bottom-style: none;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 18%;
+    left: -18%;
+    z-index: 23;
+  }
+  .satlitte {
+    width: 25px;
+    top: 45%;
+    left: 95%;
+    z-index: 30;
+    animation-name: satlitte;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes satlitte {
+    0% {
+      top: 83%;
+      left: 0%;
+      z-index: 30;
+    }
+    10% {
+      top: 86%;
+    }
+    20% {
+      top: 84%;
+    }
+    25% {
+      top: 70%;
+      left: 81%;
+    }
+    30% {
+      top: 60%;
+      left: 89%;
+    }
+    32% {
+      top: 45%;
+      left: 94%;
+    }
+    35% {
+      top: 30%;
+      left: 85%;
+      z-index: 30;
+    }
+    40% {
+      top: 20%;
+      left: 72%;
+      z-index: 30;
+    }
+    50% {
+      top: 16%;
+      left: 60%;
+    }
+    60% {
+      top: 12%;
+    }
+    70% {
+      top: 18%;
+    }
+    75% {
+      top: 25%;
+      left: -15%;
+    }
+    80% {
+      top: 32%;
+      left: -22;
+    }
+    85% {
+      top: 45%;
+      left: -26%;
+      z-index: 30;
+    }
+    90% {
+      top: 68%;
+      left: -20%;
+      z-index: 30;
+    }
+    100% {
+      top: 83%;
+      left: 0%;
+    }
+  }
+} /* max-width: 1023px */
+
+@media screen and (min-width: 667px) and (max-width: 768px) {
+  .welcomeTextBox {
+    display: none;
+  }
+
+  /* Solar System */
+  .solarSystem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    margin-top: 0px;
+    position: relative;
+  }
+  .planet {
+    width: 100%;
+    height: 707px;
+    position: absolute;
+    margin: 300px 0 0 30%;
+    transform: rotate(20deg);
+  }
+  .planet > li {
+    border: 1px dotted var(--grey-light-color);
+    border-radius: 50%;
+    position: absolute;
+  }
+  .planet img {
+    position: absolute;
+    transform: rotate(-20deg);
+  }
+
+  .planet .center {
+    border: none;
+    width: 20%;
+    height: 5%;
+    top: 45%;
+    left: 40%;
+  }
+  .blackHole {
+    width: 250px;
+    top: -600%;
+    left: -80%;
+    z-index: 18;
+    animation-name: blackHole;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes blackHole {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .jupiterOrbit {
+    border-bottom-style: none;
+    width: 40%;
+    height: 22%;
+    top: 23%;
+    left: 20%;
+  }
+  .planet .jupiterFront {
+    border-top-style: none;
+    width: 40%;
+    height: 22%;
+    top: 23%;
+    left: 20%;
+    z-index: 19;
+  }
+  .jupiter {
+    width: 40px;
+    top: 75%;
+    left: 10%;
+    z-index: 20;
+    animation-name: jupiterStop;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes jupiter {
+    0% {
+      top: 50%;
+      left: 10%;
+      z-index: 20;
+    }
+    10% {
+      top: 70%;
+      left: 25%;
+    }
+    20% {
+      top: 75%;
+      left: 40%;
+    }
+    30% {
+      top: 75%;
+      left: 55%;
+    }
+    40% {
+      top: 68%;
+      left: 70%;
+    }
+    50% {
+      top: 60%;
+      left: 85%;
+    }
+    55% {
+      top: 15%;
+      left: 100%;
+      z-index: 20;
+    }
+    60% {
+      top: 5;
+      left: 90%;
+      z-index: 16;
+    }
+    70% {
+      top: -25%;
+      left: 59%;
+    }
+    80% {
+      top: -25%;
+      left: 28%;
+      z-index: 16;
+    }
+    90% {
+      top: 15%;
+      left: -3%;
+      z-index: 20;
+    }
+    100% {
+      top: 50%;
+      left: 10%;
+    }
+  }
+
+  .moonOrbit {
+    border-bottom-style: none;
+    width: 60%;
+    height: 40%;
+    top: 15%;
+    left: 12%;
+  }
+  .planet .moonFront {
+    border-top-style: none;
+    width: 60%;
+    height: 40%;
+    top: 15%;
+    left: 12%;
+    z-index: 19;
+  }
+  .moon {
+    width: 60px;
+    top: 30%;
+    left: -5%;
+    z-index: 22;
+    animation-name: moonStop;
+    animation-duration: 150s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+  }
+
+  @keyframes moon {
+    0% {
+      top: 30%;
+      left: -3%;
+      z-index: 22;
+    }
+    5% {
+      top: 0%;
+      left: 9%;
+      z-index: 14;
+    }
+    10% {
+      top: -10%;
+      left: 21%;
+    }
+    15% {
+      top: -15%;
+      left: 34%;
+    }
+    20% {
+      top: -15%;
+      left: 46%;
+    }
+    25% {
+      top: -15%;
+      left: 58%;
+    }
+    30% {
+      top: -10%;
+      left: 70%;
+      z-index: 14;
+    }
+    35% {
+      top: -10%;
+      left: 80%;
+    }
+    40% {
+      top: 30%;
+      z-index: 22;
+    }
+    45% {
+      top: 20%;
+    }
+    50% {
+      top: -5%;
+      left: 95%;
+    }
+    55% {
+      top: 80%;
+      left: 85%;
+    }
+    60% {
+      top: 80%;
+      left: 66%;
+    }
+    65% {
+      top: 85%;
+      left: 56%;
+    }
+    70% {
+      top: 85%;
+      left: 47%;
+    }
+    75% {
+      top: 85%;
+      left: 38%;
+    }
+    80% {
+      top: 80%;
+      left: 29%;
+    }
+    85% {
+      top: 70%;
+      left: 20%;
+    }
+    90% {
+      top: 69%;
+      left: 10%;
+    }
+    95% {
+      top: 50%;
+      left: 1%;
+    }
+    100% {
+      top: 30%;
+      left: -3%;
+      z-index: 22;
+    }
+  }
+
+  .saturnOrbit {
+    border-bottom-style: none;
+    width: 80%;
+    height: 60%;
+    top: 7%;
+    left: 5%;
+  }
+  .planet .saturnFront {
+    border-top-style: none;
+    width: 80%;
+    height: 60%;
+    top: 7%;
+    left: 5%;
+    z-index: 19;
+  }
+  .saturn {
+    width: 120px;
+    top: -5%;
+    left: 25%;
+    animation-name: saturnStop;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes saturn {
+    0% {
+      top: -5%;
+      left: 25%;
+      z-index: 12;
+    }
+    10% {
+      top: 0%;
+      left: 15%;
+    }
+    20% {
+      top: 10%;
+      left: 5%;
+      z-index: 12;
+    }
+    21% {
+      top: 12%;
+      z-index: 24;
+    }
+    22% {
+      top: 15%;
+    }
+    23% {
+      top: 18%;
+    }
+    24% {
+      top: 25%;
+    }
+    25% {
+      top: 40%;
+      left: -5%;
+    }
+    26% {
+      top: 61%;
+    }
+    27% {
+      top: 70%;
+    }
+    28% {
+      top: 75%;
+    }
+    29% {
+      top: 79%;
+    }
+    30% {
+      top: 82%;
+      left: 15%;
+    }
+    40% {
+      top: 92%;
+      left: 35%;
+    }
+    50% {
+      top: 90%;
+      left: 55%;
+    }
+    55% {
+      top: 92%;
+      left: 60%;
+      z-index: 24;
+    }
+    60% {
+      top: 94%;
+      z-index: 12;
+    }
+    65% {
+      top: 88%;
+    }
+    70% {
+      top: 88%;
+      left: 100%;
+    }
+    75% {
+      top: 88%;
+    }
+    80% {
+      top: -10%;
+      left: 60%;
+    }
+    90% {
+      top: -9%;
+      left: 43%;
+    }
+    100% {
+      top: -5%;
+      left: 25%;
+    }
+  }
+
+  .marsOrbit {
+    border-bottom-style: none;
+    width: 100%;
+    height: 81%;
+    top: -1%;
+    left: 0%;
+  }
+  .marsGroup {
+    width: 20%;
+    height: 30%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    animation-name: marsStop;
+    animation-duration: 250s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes mars {
+    0% {
+      top: 0%;
+      left: 0%;
+      z-index: 26;
+    }
+    5% {
+      top: 10%;
+      left: -5%;
+    }
+    10% {
+      top: 45%;
+      left: 2%;
+    }
+    15% {
+      top: 55%;
+    }
+    20% {
+      top: 65%;
+    }
+    25% {
+      top: 68%;
+    }
+    30% {
+      top: 70%;
+      left: 30%;
+    }
+    35% {
+      top: 80%;
+      z-index: 26;
+    }
+    40% {
+      top: 75%;
+    }
+    45% {
+      top: 65%;
+    }
+    50% {
+      top: 30%;
+      left: 92%;
+      z-index: 10;
+    }
+    55% {
+      top: 5%;
+      z-index: 6;
+    }
+    60% {
+      top: -5%;
+    }
+    65% {
+      top: -10%;
+    }
+    70% {
+      top: -28%;
+      left: 50%;
+    }
+    75% {
+      top: -29%;
+    }
+    80% {
+      top: -30%;
+      left: 45%;
+    }
+    85% {
+      top: -30%;
+    }
+    90% {
+      top: -25%;
+    }
+    95% {
+      top: -20%;
+      z-index: 6;
+    }
+    100% {
+      top: 0%;
+      left: 0%;
+      z-index: 10;
+    }
+  }
+  .mars {
+    width: 100px;
+    top: 40%;
+    left: 0%;
+    z-index: 26;
+  }
+  .marsGroup:before {
+    content: "";
+    width: 80%;
+    height: 15%;
+    border: 1px dotted var(--grey-light-color);
+    border-top-style: none;
+    border-radius: 50%;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 60%;
+    left: -7%;
+    z-index: 27;
+  }
+  .marsGroup:after {
+    content: "";
+    width: 80%;
+    height: 15%;
+    border: 1px dotted var(--grey-light-color);
+    border-bottom-style: none;
+    border-radius: 50%;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 60%;
+    left: -7%;
+    z-index: 23;
+  }
+  .satlitte {
+    width: 20px;
+    top: 75%;
+    left: -0%;
+    z-index: 30;
+    animation-name: satlitteStop;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes satlitte {
+    0% {
+      top: 83%;
+      left: 0%;
+      z-index: 30;
+    }
+    10% {
+      top: 74%;
+    }
+    20% {
+      top: 66%;
+    }
+    30% {
+      top: 56%;
+    }
+    35% {
+      top: 33%;
+      left: 45%;
+      z-index: 30;
+    }
+    40% {
+      top: 40%;
+      left: 34%;
+      z-index: 24;
+    }
+    50% {
+      top: 48%;
+      left: 25%;
+    }
+    60% {
+      top: 60;
+    }
+    70% {
+      top: 70%;
+    }
+    80% {
+      top: 78%;
+    }
+    85% {
+      top: 90%;
+      left: -22%;
+      z-index: 24;
+    }
+    90% {
+      top: 90%;
+      left: -11%;
+      z-index: 30;
+    }
+    100% {
+      top: 83%;
+      left: 0%;
+    }
+  }
+}

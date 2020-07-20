@@ -1,0 +1,126 @@
+aside {
+  flex: 1 1 20%;
+}
+content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 80%;
+  margin: 250px 0 0 7%;
+}
+content section {
+  margin-bottom: 50px;
+}
+content h2 {
+  margin-bottom: 10px;
+  font-size: var(--font-large);
+  color: #eb4b33;
+}
+content p {
+  line-height: 2;
+  font-size: var(--font-medium);
+}
+
+body content .bx-wrapper {
+  background-color: #212121;
+  border: none;
+  box-shadow: none;
+  height: 250px;
+  display: flex;
+  margin-left: -5%;
+  padding: 0px 30px;
+}
+body content .bx-wrapper .bx-viewport .bookBox {
+  width: 60%;
+  margin-left: 7%;
+  padding-left: 80px;
+}
+body content .bx-wrapper .bx-viewport .bookBox i {
+  margin-right: 100px;
+  float: left;
+}
+body content .bx-wrapper .bx-viewport .bookBox h3 {
+  font-size: var(--font-large);
+  padding-top: 10px;
+}
+body content .bx-wrapper .bx-viewport .bookBox p {
+  margin-top: 40px;
+  line-height: 1.6;
+}
+body content .bx-wrapper .bx-controls .bx-controls-direction .bx-prev {
+  background: url(images/icon_next.png);
+  background-size: 100%;
+  transform: rotate(180deg);
+  width: 30px;
+  height: 50px;
+}
+body content .bx-wrapper .bx-controls .bx-controls-direction .bx-next {
+  background: url(images/icon_next.png);
+  background-size: 100%;
+  width: 30px;
+  height: 50px;
+}
+.articles {
+  margin-left: 110px;
+}
+.articles h4 {
+  width: 200px;
+  border-bottom: 1px solid var(--grey-light-color);
+  margin-bottom: 20px;
+  font-size: var(--font-large);
+}
+.articles span {
+  font-size: var(--font-medium);
+  color: var(--grey-light-color);
+  line-height: 2;
+}
+.articles span:hover {
+  color: var(--red-color);
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .articles h4 {
+    width: 150px;
+    margin-top: -10px;
+  }
+  .articles span {
+    line-height: 1.5;
+  }
+} /* min-width: 769px and max-width: 1024px */
+
+@media screen and (min-width: 667px) and (max-width: 768px) {
+  .articles h4 {
+    width: 150px;
+    margin-top: -10px;
+  }
+  .articles span {
+    line-height: 1.5;
+  }
+
+  content section {
+    margin-bottom: 0px;
+  }
+  content h2 {
+    margin-bottom: 10px;
+    font-size: var(--font-large);
+    color: #eb4b33;
+  }
+  content p {
+    line-height: 2;
+    font-size: var(--font-medium);
+  }
+
+  body content .bx-wrapper {
+    background-color: #212121;
+    border: none;
+    box-shadow: none;
+    height: 250px;
+    display: flex;
+    margin-left: -5%;
+    padding: 20px 0px 0 0;
+  }
+  body content .bx-wrapper .bx-viewport .bookBox {
+    width: 60%;
+    margin-left: 0%;
+    padding-left: 80px;
+  }
+} /* min-width: 667px and max-width: 768px */
