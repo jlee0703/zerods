@@ -35,16 +35,16 @@ body {
 }
 
 .planet .center {
-  border: none;
+  border: 1px solid red;
   width: 20%;
   height: 5%;
   top: 33%;
   left: 40%;
 }
 .blackHole {
-  width: 100%;
-  top: -500%;
-  left: 0%;
+  width: 25vw;
+  top: -700%;
+  left: -30%;
   z-index: 18;
   animation-name: blackHole;
   animation-duration: 60s;
