@@ -142,7 +142,7 @@ body {
   }
 }
 
-.moonOrbit {
+ul .moonOrbit {
   border-bottom-style: none;
   width: 60%;
   height: 40%;
@@ -159,8 +159,8 @@ body {
 }
 .moon {
   width: 80px;
-  top: 30%;
-  left: -3%;
+  top: 2%;
+  left: 5%;
   z-index: 22;
   animation-name: moon;
   animation-duration: 150s;
@@ -171,95 +171,76 @@ body {
 
 @keyframes moon {
   0% {
-    top: 30%;
-    left: -3%;
-    z-index: 22;
+    top: -5%;
+    left: 13%;
   }
   5% {
-    top: 0%;
-    left: 9%;
+    /* top: 0%;
+    left: 9%; */
     z-index: 14;
   }
   10% {
-    top: -10%;
-    left: 21%;
-  }
-  15% {
     top: -15%;
-    left: 34%;
+    left: 39%;
   }
   20% {
-    top: -15%;
-    left: 46%;
+    top: -13%;
+    left: 65%;
   }
   25% {
-    top: -15%;
-    left: 58%;
+    top: -7%;
+    left: 78%;
   }
   30% {
-    top: -10%;
-    left: 70%;
-    z-index: 14;
+    top: 15%;
+    left: 92%;
   }
   35% {
-    top: -10%;
-    left: 80%;
+    top: 35%;
+    left: 95%;
+    z-index: 14;
   }
   40% {
-    top: 30%;
+    top: 55%;
+    left: 90%;
     z-index: 22;
   }
-  45% {
-    top: 20%;
-  }
   50% {
-    top: -5%;
-    left: 95%;
-  }
-  55% {
-    top: 80%;
-    left: 85%;
+    top: 79%;
+    left: 65%;
   }
   60% {
-    top: 80%;
-    left: 66%;
-  }
-  65% {
-    top: 85%;
-    left: 56%;
+    top: 82%;
+    left: 51%;
   }
   70% {
     top: 85%;
-    left: 47%;
+    left: 37%;
   }
   75% {
-    top: 85%;
-    left: 38%;
+    top: 80%;
+    left: 28%;
   }
   80% {
-    top: 80%;
-    left: 29%;
+    top: 62%;
+    left: 5%;
   }
   85% {
-    top: 70%;
-    left: 20%;
+    top: 30%;
+    left: -5%;
   }
   90% {
-    top: 69%;
-    left: 10%;
-  }
-  95% {
-    top: 50%;
-    left: 1%;
+    top: 2%;
+    left: 5%;
   }
   100% {
-    top: 30%;
-    left: -3%;
+    top: -5%;
+    left: 13%;
     z-index: 22;
   }
 }
 
-.saturnOrbit {
+ul .saturnOrbit {
   border-bottom-style: none;
   width: 80%;
   height: 60%;
@@ -276,8 +257,8 @@ body {
 }
 .saturn {
   width: 160px;
-  top: -5%;
-  left: 25%;
+  top: -2%;
+  left: 15%;
   animation-name: saturn;
   animation-duration: 60s;
   animation-iteration-count: infinite;
@@ -285,95 +266,73 @@ body {
 }
 @keyframes saturn {
   0% {
-    top: -5%;
-    left: 25%;
+    top: -2%;
+    left: 15%;
     z-index: 12;
   }
   10% {
-    top: 0%;
-    left: 15%;
-  }
-  20% {
-    top: 10%;
-    left: 5%;
+    top: 22%;
+    left: -4%;
     z-index: 12;
   }
-  21% {
-    top: 12%;
+  15% {
+    top: 42%;
+    left: -7%;
+  }
+  20% {
+    top: 72%;
+    left: 5%;
     z-index: 24;
   }
-  22% {
-    top: 15%;
-  }
-  23% {
-    top: 18%;
-  }
-  24% {
-    top: 25%;
-  }
   25% {
-    top: 40%;
-    left: -5%;
-  }
-  26% {
-    top: 61%;
-  }
-  27% {
-    top: 70%;
-  }
-  28% {
-    top: 75%;
-  }
-  29% {
-    top: 79%;
-  }
-  30% {
     top: 82%;
     left: 15%;
   }
+  30% {
+    top: 91%;
+    left: 41%;
+  }
   40% {
-    top: 92%;
-    left: 35%;
+    top: 85%;
+    left: 67%;
   }
   50% {
-    top: 90%;
-    left: 55%;
-  }
-  55% {
-    top: 92%;
-    left: 60%;
-    z-index: 24;
+    top: 75%;
+    left: 80%;
   }
   60% {
-    top: 94%;
+    top: 68%;
+    left: 85%;
     z-index: 12;
   }
   65% {
-    top: 88%;
+    top: 45%;
+    left: 93%;
   }
   70% {
-    top: 88%;
-    left: 100%;
+    top: 12%;
+    left: 85%;
   }
   75% {
-    top: 88%;
+    top: 0%;
+    left: 75%;
   }
   80% {
-    top: -10%;
-    left: 60%;
+    top: -7%;
+    left: 63%;
   }
   90% {
-    top: -9%;
-    left: 43%;
+    top: -11%;
+    left: 37%;
   }
   100% {
-    top: -5%;
-    left: 25%;
+    top: -2%;
+    left: 15%;
   }
 }
 
-.marsOrbit {
-  border-bottom-style: none;
+ul .marsOrbit {
+  /* border-bottom-style: none; */
   width: 100%;
   height: 81%;
   top: -1%;
@@ -383,8 +342,8 @@ body {
   width: 20%;
   height: 30%;
   position: relative;
-  top: 0%;
-  left: 0%;
+  top: 40%;
+  left: -1%;
   animation-name: mars;
   animation-duration: 250s;
   animation-iteration-count: infinite;
@@ -392,80 +351,76 @@ body {
 }
 @keyframes mars {
   0% {
-    top: 0%;
-    left: 0%;
+    top: 60%;
+    left: 10%;
     z-index: 26;
-  }
-  5% {
-    top: 10%;
-    left: -5%;
   }
   10% {
-    top: 45%;
-    left: 2%;
-  }
-  15% {
-    top: 55%;
+    top: 72%;
+    left: 34%;
   }
   20% {
-    top: 65%;
+    top: 70%;
+    left: 58%;
   }
   25% {
-    top: 68%;
+    top: 62%;
+    left: 75%;
   }
   30% {
-    top: 70%;
-    left: 30%;
-  }
-  35% {
-    top: 80%;
+    top: 55%;
+    left: 82%;
     z-index: 26;
   }
+  35% {
+    top: 45%;
+    left: 87%;
+  }
   40% {
-    top: 75%;
-  }
-  45% {
-    top: 65%;
-  }
-  50% {
-    top: 30%;
-    left: 92%;
+    top: 20%;
+    left: 95%;
     z-index: 10;
   }
-  55% {
-    top: 5%;
-    z-index: 6;
+  45% {
+    top: -10%;
+    left: 82%;
+  }
+  50% {
+    top: -20%;
+    left: 72%;
   }
   60% {
-    top: -5%;
-  }
-  65% {
-    top: -10%;
+    top: -30%;
+    left: 42%;
   }
   70% {
-    top: -28%;
-    left: 50%;
+    top: -25%;
+    left: 24%;
   }
   75% {
-    top: -29%;
+    top: -15%;
+    left: 10%;
   }
   80% {
-    top: -30%;
-    left: 45%;
+    top: -5%;
+    left: 2%;
   }
   85% {
-    top: -30%;
+    top: 12%;
+    left: -6%;
   }
   90% {
-    top: -25%;
-  }
-  95% {
-    top: -20%;
+    top: 30%;
+    left: -5%;
     z-index: 6;
   }
+  95% {
+    top: 40%;
+    left: -2%;
+  }
   100% {
-    top: 0%;
-    left: 0%;
+    top: 60%;
+    left: 10%;
     z-index: 10;
   }
 }
@@ -500,8 +455,6 @@ body {
   top: 80%;
   left: -10%;
   z-index: 23;
-  border-right: 5px solid red;
-  border-left: 5px solid red;
 }
 .satlitte {
   width: 40px;
@@ -539,19 +492,19 @@ body {
     top: 60;
   }
   70% {
-    top: 70%;
+    top: 75%;
   }
   75% {
-    top: 80%;
+    top: 83%;
     left: -5%;
   }
-  85% {
-    top: 85%;
-    left: -15%;
+  80% {
+    top: 95%;
+    left: -17%;
     z-index: 24;
   }
   90% {
-    top: 90%;
+    /* top: 90%; */
     left: -11%;
     z-index: 30;
   }
