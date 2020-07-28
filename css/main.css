@@ -35,7 +35,7 @@ body {
 }
 
 .planet .center {
-  border: 1px solid red;
+  border: none;
   width: 20%;
   height: 5%;
   position: relative;
@@ -544,7 +544,7 @@ ul .marsOrbit {
     border-color: transparent;
   }
   50% {
-    border-color: var(--red-color);
+    border-color: var(--white-color);
   }
 }
 
@@ -554,74 +554,56 @@ ul .marsOrbit {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 767px) and (max-width: 1024px) {
   .solarSystem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     margin-top: 0px;
-    position: relative;
   }
   .planet {
     width: 100%;
-    margin: 100px 0 0 25%;
+    margin: 0;
     transition: all 1s linear;
     transform: rotate(0deg);
   }
+  /* .planet > li {
+    same
+  } */
   .planet img {
     transform: rotate(0deg);
   }
   .planet .center {
-    border: none;
     width: 18%;
     height: 5%;
-    top: 45%;
-    left: 33%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .blackHole {
-    width: 150px;
-    top: -350%;
-    left: -62%;
-    z-index: 18;
-    animation-name: blackHole;
-    animation-duration: 60s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    width: 17vw;
+    top: -220%;
+    left: 0%;
   }
-  @keyframes blackHole {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+  /* @keyframes blackHole {
+    same
+  } */
   .jupiterOrbit {
-    border-bottom-style: none;
+    border: 1px dotted var(--grey-light-color);
     width: 20%;
     height: 30%;
-    top: 23%;
-    left: 20%;
+    top: 36%;
+    left: 50%;
+    transform: translateX(-50%);
     transition: all 1s linear;
   }
   .planet .jupiterFront {
-    border-top-style: none;
-    width: 20%;
-    height: 30%;
-    top: 23%;
-    left: 20%;
-    transition: all 1s linear;
+    display: none;
   }
   .jupiter {
     width: 50px;
     top: 42%;
     left: -12%;
-    z-index: 20;
     animation-name: jupiter2d;
     animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
   }
   @keyframes jupiter2d {
     0% {
@@ -710,32 +692,26 @@ ul .marsOrbit {
     }
   }
 
-  .moonOrbit {
-    border-bottom-style: none;
+  ul .moonOrbit {
+    border: 1px dotted var(--grey-light-color);
     width: 30%;
     height: 45%;
-    top: 15%;
-    left: 15%;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
     transition: all 1s linear;
   }
   .planet .moonFront {
-    border-top-style: none;
-    width: 30%;
-    height: 45%;
-    top: 15%;
-    left: 15%;
-    transition: all 1s linear;
+    display: none;
   }
   .moon {
     width: 50px;
     top: 40%;
     left: -8%;
-    z-index: 22;
     animation-name: moon2d;
     animation-duration: 210s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    position: absolute;
   }
 
   @keyframes moon2d {
@@ -826,21 +802,17 @@ ul .marsOrbit {
     }
   }
 
-  .saturnOrbit {
-    border-bottom-style: none;
+  ul .saturnOrbit {
+    border: 1px dotted var(--grey-light-color);
     width: 45%;
     height: 65%;
-    top: 5%;
-    left: 7%;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
     transition: all 1s linear;
   }
   .planet .saturnFront {
-    border-top-style: none;
-    width: 45%;
-    height: 65%;
-    top: 5%;
-    left: 7%;
-    transition: all 1s linear;
+    display: none;
   }
   .saturn {
     width: 130px;
@@ -955,12 +927,13 @@ ul .marsOrbit {
     }
   }
 
-  .marsOrbit {
-    border-bottom-style: none;
+  ul .marsOrbit {
+    border: 1px dotted var(--grey-light-color);
     width: 60%;
     height: 85%;
-    top: -5%;
-    left: -1%;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
     transition: all 1s linear;
   }
   .marsGroup {
@@ -973,6 +946,11 @@ ul .marsOrbit {
     animation-duration: 240s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+  }
+  .mars {
+    width: 100px;
+    top: 27%;
+    left: 0%;
   }
   @keyframes mars2d {
     0% {
@@ -1064,18 +1042,12 @@ ul .marsOrbit {
       left: 3%;
     }
   }
-  .mars {
-    width: 120px;
-    top: 25%;
-    left: -7%;
-    z-index: 26;
-  }
+
   .marsGroup:before {
     content: "";
     width: 120%;
     height: 75%;
     border: 1px dotted var(--grey-light-color);
-    border-top-style: none;
     border-radius: 50%;
     transform: rotate(0deg);
     position: absolute;
@@ -1084,17 +1056,7 @@ ul .marsOrbit {
     z-index: 27;
   }
   .marsGroup:after {
-    content: "";
-    width: 120%;
-    height: 75%;
-    border: 1px dotted var(--grey-light-color);
-    border-bottom-style: none;
-    border-radius: 50%;
-    transform: rotate(0deg);
-    position: absolute;
-    top: 18%;
-    left: -18%;
-    z-index: 23;
+    display: none;
   }
   .satlitte {
     width: 25px;
@@ -1102,7 +1064,7 @@ ul .marsOrbit {
     left: 95%;
     z-index: 30;
     animation-name: satlitte;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
