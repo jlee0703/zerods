@@ -333,7 +333,6 @@ ul .saturnOrbit {
 }
 
 ul .marsOrbit {
-  /* border-bottom-style: none; */
   width: 100%;
   height: 81%;
   top: -1%;
@@ -1261,7 +1260,7 @@ ul .marsOrbit {
   }
   .marsGroup:before {
     content: "";
-    width: 80%;
+    width: 120px;
     height: 15%;
     border: 1px dotted var(--grey-light-color);
     border-top-style: none;
