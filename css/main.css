@@ -553,7 +553,7 @@ ul .marsOrbit {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .solarSystem {
     height: 100vh;
     margin-top: 0px;
@@ -1140,7 +1140,7 @@ ul .marsOrbit {
 /* max-width: 1023px */
 /* max-width: 1023px */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .welcomeTextBox {
     display: none;
   }
@@ -1290,14 +1290,17 @@ ul .marsOrbit {
       z-index: 30;
     }
     50% {
+      width: 20px;
       left: 60%;
       z-index: 30;
     }
     60% {
+      width: 15px;
       left: 59%;
       z-index: 10;
     }
     90% {
+      width: 15px;
       left: -19%;
     }
     100% {
