@@ -11,10 +11,6 @@ function enterWork(e) {
   } else {
     gate.classList.add("on");
     header.classList.add("on");
-    setTimeout(
-      () =>
-        (location.href = "http://jlee0703.dothome.co.kr/SolarSystem/main.html"),
-      200
-    );
+    setTimeout(() => (location.href = "./main.html"), 200);
   }
 }
